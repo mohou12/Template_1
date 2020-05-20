@@ -56,7 +56,7 @@
 .hover-effect-lr:after, .hover-effect-tb:after {
     position: absolute;
     content: "";
-    background-color: #C0C0C0;
+    background-color: #eee;
     width: 0;
 	height: 0;
     top: 0;
@@ -102,7 +102,7 @@ button {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: montserrat,sans-serif;
+    font-family: 'montserrat',sans-serif;
 }
 
 ul {
@@ -192,11 +192,11 @@ a {
 .header-nav .dropdown-menu {
     position: absolute;
     border-radius: 2px;
-    width: 90px;
+    width: 100px;
     text-align: center;
-    background-color: #6195ff;
+    background-color: #999;
     padding: 5px 0;
-    right: -45px;
+    right: -63px;
     margin-top: 7px;
     opacity: 0;
     visibility: hidden;
@@ -311,7 +311,7 @@ a {
 }
 
 .about-items:hover .desc {
-    color: white;
+    color: #6195ff;
 }
 
 .about-items .infos {
@@ -436,7 +436,7 @@ a {
 }
 
 .service-item:hover .title {
-	color: white;
+	color: #6195ff;
 	transition: color 0.5s;
 }
 
@@ -635,10 +635,12 @@ a {
 }
 
 .pricing-item:hover .delay h2,
-.pricing-item:hover .description li,
 .pricing-item:hover .delay span,
 .pricing-item:hover .purchase {
-	color: 	white;
+	color: 	#6195ff;
+}
+.pricing-item:hover .description li{
+	color: gray;
 }
 
 
@@ -864,26 +866,23 @@ a {
 	
 .contact-input .name {
 	width: 48%;
-	margin-right: 3%;font-size: inherit;
+	margin-right: 3%;
 	
 }
 
 .contact-input .email {
 	width: 48%;
-	font-size: inherit;
 }
 
 .contact-input .subject {
 	margin: 10px 0;
 	width: 100%;
-	font-size: inherit;
 	
 }
 
 .contact-input .message {
 	margin: 10px 0 20px 0;	
 	width: 100%;
-	font-size: 18px;
 }
 
 .contact-input .btn {
@@ -907,11 +906,12 @@ a {
 .contact-input .email,
 .contact-input .subject,
 .contact-input .message {
-	background-color: #f9f9f9;
+	background-color: #f4f4f4;
 	border: none;
 	border-bottom: 2px solid #eee;
-	color: #999;
-	padding: 10px;
+	font-size: 17px;
+	padding: 12px;
+	opacity: 0.6;
 }
 
 
@@ -927,16 +927,19 @@ a {
 	display: inline-block;
 	margin-right: 15px;
 	margin-bottom: 30px;
+	
 }
 
 .footer-social i {
 	color: white;
+	font-size: 20px;
+	display: block;
 	background: #3968c5;
-	width: 60px;
-	height: 60px;
-	padding: 15px;
-	border-radius: 50%;
-	transition: color 0.5s, background-color 0.5s;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+	padding-top: 10px;
+	transition: color 0.5s, background-color 0.5s, border-radius 0.7s;
 }
 
 .footer-copy {
@@ -949,7 +952,9 @@ a {
 }
 
 
-
+.footer:hover .footer-social i{
+	border-radius: 50%;
+}
 
 
 
